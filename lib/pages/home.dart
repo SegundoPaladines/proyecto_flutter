@@ -7,18 +7,16 @@ class Home extends StatelessWidget {
   const Home({super.key});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: <Widget>[
-          ListView(
-            children: const <Widget>[
-              DescriptionPlace(name: "Dwilly Hela", stars: 4),
-              ReviewList(),
-            ],
-          ),
-          const Header(),
-        ],
-      ),
+    return Stack(
+      children: <Widget>[
+        ListView(
+          children: const <Widget>[
+            DescriptionPlace(name: "Dwilly Hela", stars: 4),
+            ReviewList(),
+          ],
+        ),
+        const Header(title: "Popular"),
+      ],
     );
   }
 }

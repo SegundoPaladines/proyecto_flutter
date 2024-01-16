@@ -3,13 +3,14 @@ import 'package:app_proy_1/components/gradient_back.dart';
 import 'package:flutter/material.dart';
 
 class Header extends StatelessWidget {
-  const Header({super.key});
+  final String title;
+  const Header({super.key, required this.title});
   @override
   Widget build(BuildContext context) {
-    return const Stack(
-      children:<Widget> [
-        GradientBack(titulo: "Popular"),
-        CardImageList(),
+    return Stack(
+      children: <Widget>[
+        GradientBack(titulo: title),
+        const CardImageList(),
       ],
     );
   }

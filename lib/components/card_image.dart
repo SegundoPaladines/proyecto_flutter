@@ -1,3 +1,4 @@
+import 'package:app_proy_1/components/floating_action_button.dart';
 import 'package:flutter/material.dart';
 
 class CardImage extends StatelessWidget {
@@ -29,6 +30,12 @@ class CardImage extends StatelessWidget {
       ),
     );
 
-    return card;
+    return Stack(
+      alignment: const Alignment(0.9, 1.1),
+      children: <Widget> [
+        card,
+        const FloatingActionButtonGreen(),
+      ],
+    );
   }
 }
