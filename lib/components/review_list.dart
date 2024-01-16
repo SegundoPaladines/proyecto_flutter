@@ -1,4 +1,4 @@
-import 'package:app_proy_1/review.dart';
+import 'package:app_proy_1/components/review.dart';
 import 'package:flutter/material.dart';
 
 class ReviewList extends StatelessWidget {

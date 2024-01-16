@@ -1,3 +1,5 @@
+import 'package:app_proy_1/components/button.dart';
+import 'package:app_proy_1/components/text_block.dart';
 import 'package:flutter/material.dart';
 
 class DescriptionPlace extends StatelessWidget {
@@ -66,6 +68,16 @@ class DescriptionPlace extends StatelessWidget {
       ],
     );
 
-    return titleStars;
+    return Column(
+      children:<Widget> [
+        titleStars,
+        const TextBlock(texto: "Irure laboris ullamco tempor ipsum amet eiusmod est amet aliquip do non. Ullamco veniam reprehenderit qui consequat exercitation nostrud labore cillum. Lorem laborum ipsum incididunt laboris proident aliquip incididunt irure quis aliqua cillum."),
+        const TextBlock(texto: "Laboris deserunt aute aute commodo voluptate. Elit dolore officia commodo veniam officia mollit Lorem aliqua. Deserunt minim proident ea exercitation irure proident ea et id excepteur quis magna."),
+        Container(
+          alignment: Alignment.bottomLeft,
+          child: const ButtonPurple(txt: "Navigate "),
+        )
+      ],
+    );
   }
 }
