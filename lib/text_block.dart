@@ -17,6 +17,7 @@ class TextBlock extends StatelessWidget {
         style: const TextStyle(
           fontSize: 16.0,
           fontWeight: FontWeight.bold,
+          fontFamily: "Lato",
           color: Color(0xFF56575a),
         ),
         textAlign: TextAlign.left,

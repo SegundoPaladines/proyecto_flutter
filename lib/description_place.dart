@@ -2,9 +2,35 @@ import 'package:flutter/material.dart';
 
 class DescriptionPlace extends StatelessWidget {
   final String name;
-  const DescriptionPlace({super.key, required this.name});
+  final int stars;
+  const DescriptionPlace({super.key, required this.name, required this.stars});
   @override
   Widget build(BuildContext context) {
+    //estrella vacia
+    final starBorder = Container(
+       margin: const EdgeInsets.only(
+        top: 323.0,
+        left: 3.0,
+      ),
+      child: const Icon(
+        Icons.star_border,
+        color: Color(0xFFf2C611),
+      ),
+    );
+
+    //estrella a la mitad
+    final starHalf = Container(
+       margin: const EdgeInsets.only(
+        top: 323.0,
+        left: 3.0,
+      ),
+      child: const Icon(
+        Icons.star_half,
+        color: Color(0xFFf2C611),
+      ),
+    );
+
+    //estrella completa
     final star = Container(
       margin: const EdgeInsets.only(
         top: 323.0,
@@ -28,13 +54,14 @@ class DescriptionPlace extends StatelessWidget {
             name,
             style: const TextStyle(
               fontSize: 30,
+              fontFamily: "Lato",
               fontWeight: FontWeight.w900,
             ),
             textAlign: TextAlign.left,
           ),
         ),
         Row(
-          children: [star, star, star, star, star],
+          children: [star, star, star, starHalf, starBorder],
         )
       ],
     );
