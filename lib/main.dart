@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      //utilizamos un contenedor para poder cambiar de vistas
       home: AppTrips(),
     );
   }

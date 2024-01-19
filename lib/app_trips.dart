@@ -38,6 +38,7 @@ class _AppTrips extends State<AppTrips> {
         child: BottomNavigationBar(
             onTap: onTapTapped,
             currentIndex: indexTab,
+            //lista de vistas de la app
             items: const [
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),
